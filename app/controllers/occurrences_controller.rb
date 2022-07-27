@@ -7,13 +7,15 @@ class OccurrencesController < ApplicationController
       @occurrences = Occurrence.all
     end
 
-    # @markers = @occurrences.map do |occurrence|
-    #   {
-    #     lat: occurrence.latitude,
-    #     lng: occurrence.longitude,
-    #     info_window: render_to_string(partial: "info_window", locals: { occurrence: occurrence })
-    #   }
-    # end
+    if !@occurrences.nil?
+     @markers = @occurrences.map do |occurrence|
+       {
+         lat: occurrence.latitude,
+         lng: occurrence.longitude,
+         #info_window: render_to_string(partial: "info_window", locals: { occurrence: occurrence })
+       }
+     end
+    end
   end
 
   def show
