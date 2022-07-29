@@ -29,8 +29,9 @@ function buildMapNewPoint() {
     //                                                 </div>`);
     //}
 
-    coords = [parseFloat(teste.querySelector(".occurrence_longitude").querySelector(".form-control").value),
-      parseFloat(teste.querySelector(".occurrence_latitude").querySelector(".form-control").value)];
+    coords = [-43, -22]
+    //coords = [parseFloat(teste.querySelector(".occurrence_longitude").querySelector(".form-control").value),
+      //parseFloat(teste.querySelector(".occurrence_latitude").querySelector(".form-control").value)];
   }
 
   mapboxgl.accessToken = 'pk.eyJ1IjoicGpmZXJuYW5kZXMiLCJhIjoiY2t1c291Z3lzNWg2bzJvbW5kNWNhbnZhaCJ9.eYxvagOUGuS5qDo-zOfRCA';
